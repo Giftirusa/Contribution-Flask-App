@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <title>Record Contribution</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        input[type="email"],
+        input[type="number"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+        input[type="submit"] {
+            background-color: #23cb62;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #03752e;
+        }
+    </style>
+</head>
+<body>
+    <h1>Record Contribution</h1>
+    <form method="POST" action="/record_contribution">
+        <label for="email">Email:</label>
+        <input type="email" name="email" required><br>
+        <label for="amount">Amount:</label>
+        <input type="number" name="amount" required><br>
+        <label for="group_id">Group ID:</label>
+        <input type="number" name="group_id" required><br>
+        <input type="submit" value="Record Contribution">
+    </form>
+</body>
+</html>
