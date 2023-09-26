@@ -7,6 +7,12 @@ contributions = []
 groups = []
 
 
+# Route for the homepage
+@app.route('/', methods=['GET'])
+def index():
+    return render_template('index.html')
+
+
 # Create a contribution group over REST using JSON
 @app.route('/create_group', methods=['POST'])
 def create_group():
